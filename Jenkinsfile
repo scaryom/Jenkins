@@ -7,9 +7,10 @@ pipeline{
                 echo "Inistalzed"
             }
         }
-        stage("Building")
+        stage("Building"){
             steps{
                 echo "Building file"
+        }
         }
         stage("Tesing"){
             steps{
@@ -18,9 +19,10 @@ pipeline{
             }
 
         }
-        stage("Deploying")
+        stage("Deploying"){
             steps{
                 echo "Deployed"
             }
+        }
     }
 }
